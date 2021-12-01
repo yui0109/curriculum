@@ -20,7 +20,7 @@
                            
                    </h2>
 
-                   <h2 class='title'>{{ $post->title }}</h2>
+                   
 
                    <p class='body'>{{ $post->body }}</p>
                 </div>

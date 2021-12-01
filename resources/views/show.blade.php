@@ -17,6 +17,7 @@
            <div class='content__post'>
                <h3>本文</h3>
                <p>{{ $post->body }}</p>
+               <p class='updated_at'>{{ $post->updated_at }}</p>
            </div>
         </div>
         <div class='footer'>
