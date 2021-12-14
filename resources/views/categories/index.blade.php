@@ -13,7 +13,6 @@
 
     </head>
     <body>
-        {{Auth::user()->name}}
         <h1>Blog Name</h1>
         <p class='create'>[<a href='/posts/create'>create</a>]</p>
         <div class='posts'>
@@ -23,6 +22,7 @@
                    <h2 class='title'>
                        <a href="/posts/{{ $post->id }}">{{ $post->title }}</a>
                        
+                        
                    </h2>
                    <p><a href="/categories/{{ $post->category->id }}">{{ $post->category->name }}</a></p>
 
@@ -36,15 +36,7 @@
         <div class='paginate'>
             {{ $posts->links() }}
         </div>
-        <div>
-            @foreach($questions as $question)
-                <div>
-                    <a href="https://teratail.com/questions/{{ $question['id'] }}">
-                     {{ $question['title'] }}</div>
-                    </a>
-                </div>
-            @endforeach
-        </div>
+        
     </body>
 </html>
 @endsection
